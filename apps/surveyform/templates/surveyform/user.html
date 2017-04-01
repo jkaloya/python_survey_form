@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Form Test Show</title>
+  </head>
+  <body>
+        <div id="wrapper">
+            <div ='box'>
+                <p>Thanks for submitting! You have submitted this form {{ request.session.counter }} times now.</p>
+                <h2>Submitted Info:</h2>
+                <h4>Name: {{request.session.name}}</h4>
+                <h4>Location: {{request.session.location}}</h4>
+                <h4>Favorite Language: {{request.session.language}}</h4>
+                <h4>Comment: {{request.session.comment}}</h4>
+            </div>
+        </div>
+  </body>
+</html>
